@@ -32,6 +32,7 @@ class _SpeechRecognitionPageState extends State<SpeechRecognitionPage> {
         onResult: (result) {
           setState(() {
             _recognizedText = result.recognizedWords;
+            _recognizedText = result.recognizedWords;
           });
         },
       );
@@ -94,7 +95,10 @@ class _SpeechRecognitionPageState extends State<SpeechRecognitionPage> {
               child: Text(_isListening ? "Stop Listening" : "Start Speaking"),
             ),
             const SizedBox(height: 10),
-            ElevatedButton(onPressed: _saveMemory, child: const Text("Save Memory")),
+            ElevatedButton(
+              onPressed: _saveMemory,
+              child: const Text("Save Memory"),
+            ),
           ],
         ),
       ),
