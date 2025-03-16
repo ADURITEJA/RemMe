@@ -34,6 +34,7 @@ class _SpeechRecognitionPageState extends State<SpeechRecognitionPage> {
             _recognizedText = result.recognizedWords;
             _recognizedText = result.recognizedWords;
             _recognizedText = result.recognizedWords;
+            _recognizedText = result.recognizedWords;
           });
         },
       );
